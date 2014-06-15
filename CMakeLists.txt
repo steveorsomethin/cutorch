@@ -14,6 +14,7 @@ IF(APPLE)
   endif()
   # Default was changed to libc++ in OSX 10.9
   set(CMAKE_CXX_FLAGS -stdlib=libstdc++)
+  set(CMAKE_MODULE_LINKER_FLAGS -stdlib=libstdc++)
 ENDIF()
 
 FIND_PACKAGE(CUDA 4.0 REQUIRED)
